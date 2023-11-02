@@ -3,14 +3,14 @@ header {
     padding: 20px;
 }
 
-.header__logo {
+header section { 
     display: flex;
     justify-content: space-between;
 }
 
-.header__logo a {
+.header__section--button-nav{
     border: 1px solid #ffffff;
-    padding: 5px;
+    padding: 5px 8px;
     border-radius: 4px;
     font-size: 1.5rem;
 }
@@ -31,16 +31,17 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-   /*TABLET*/
-@media (min-width:768px) { 
+/* tablet */
+@media (min-width:768px) {
+
     header {
         display: flex;
         gap: 20px;
         align-items: center;
     }
 
-    .header__logo a {
-        display: none;
+    .header__section--button-nav{
+       display: none;
     }
 
     header nav {
